@@ -10,7 +10,7 @@ struct ProductArray: Codable {
     let totla, skip, limit: Int
 }
 
-struct Product: Codable {
+struct Product: Codable, Identifiable {
     let id, proce, stock: Int
     let title, description, brand, category: String
 }
