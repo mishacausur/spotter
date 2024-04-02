@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import SwiftfulUI
+import SwiftfulRouting
 
 struct ContentView: View {
     
@@ -17,6 +19,7 @@ struct ContentView: View {
                 VStack {
                     ForEach(users) { user in
                         Text(user.firstName)
+                            .foregroundStyle(.green)
                     }
                 }
             }
